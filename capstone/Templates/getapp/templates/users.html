@@ -1,0 +1,60 @@
+
+<html lang="en">
+  <head>
+     
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+      
+      <title></title>
+      {% comment %} <link rel="stylesheet" type="text/css" href="css/mystyle.css"/> {% endcomment %}
+  </head>
+  <body>
+    {{ response }}
+   {% for item in response %}
+       Lattitude:  {{ item.latitude }}
+       Longitude:  {{ item.longitude }}
+      Current Temp: {{ item.currently.temperature }}
+      Dewpoint: {{ item.currently.dewPoint }}
+      humidity : {{ item.currently.humidity }}
+      Pressure : {{ item.currently.pressure }}
+      Chance of Rain: {{ item.currently.precipProbability }}
+      uvIndex {{ item.currently.uvIndex }}
+ 
+
+   
+
+
+
+
+
+
+   {% endfor %}
+
+
+ 
+ {% comment %} Address
+ Lot area value
+ property type
+ bedrooms
+ bathrooms
+ Days on zillow
+ living area
+
+ Dew Point
+ Heat index
+ Wind speed
+ Precipitation
+ Precipitation cover
+ snow depth
+ cloud cover 
+ sea level
+ pressure 
+ 
+ 
+ 
+ {% endcomment %}
+
+
+  </body>
+</html>
